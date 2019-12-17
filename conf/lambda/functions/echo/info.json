@@ -1,0 +1,20 @@
+{
+    "FunctionName": "echo",
+    "FunctionArn": "arn:aws:lambda:ap-northeast-1:556107130037:function:echo",
+    "Runtime": "nodejs8.10",
+    "Role": "arn:aws:iam::556107130037:role/learnjs_lambda_exec",
+    "Handler": "index.echo",
+    "CodeSize": 799745,
+    "Description": "",
+    "Timeout": 5,
+    "MemorySize": 128,
+    "LastModified": "2019-12-17T08:11:17.780+0000",
+    "CodeSha256": "0YlJg4rt+kFVHeKzjYdenQ/JCV0o+wbgUfy2nqQ4e+A=",
+    "Version": "1",
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "7b332ed7-3c4c-4e1c-80ad-eac8756e6592",
+    "State": "Active",
+    "LastUpdateStatus": "Successful"
+}
