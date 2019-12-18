@@ -219,6 +219,18 @@ learnjs.countAnswer = function (problemId) {
         });
     });
 }
+learnjs.popularAnswers = function (problemId) {
+    return learnjs.identity.then(function () {
+        var lambda = new AWS.Lambda();
+        var params = {
+            FunctionName: 'learnjs_popularAnswers',
+            Payload: JSON.stringify({ problemNumber: problemId })
+        };
+        return learnjs.sendAwsRequest(lambda.invoke(params), function () {
+            return learnjs.popularAnswers(problemId);
+        });
+    });
+}
 function googleSignIn(googleUser) {
     console.log('googleSignIn');
     console.log(arguments);
